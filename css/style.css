@@ -58,3 +58,9 @@
     /* Small captions or less important details */
 }
 /*Put the body code here*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
