@@ -14,6 +14,7 @@
 =======
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
 >>>>>>> 932f963e759e893d374dae6fc30d723be915e6c3
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,16 +42,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-<<<<<<< HEAD
-    "JavaScript Debug.index.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-=======
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging master",
->>>>>>> 932f963e759e893d374dae6fc30d723be915e6c3
+    "git-widget-placeholder": "origin",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Jihad Thabit/Desktop/onWorkFrontEndMentor/blogr-landing-page-main",
     "node.js.detected.package.eslint": "true",
@@ -58,11 +52,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-<<<<<<< HEAD
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-=======
     "settings.editor.selected.configurable": "terminal",
->>>>>>> 932f963e759e893d374dae6fc30d723be915e6c3
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -104,7 +94,6 @@
       <workItem from="1734884979344" duration="39000" />
       <workItem from="1734885025201" duration="848000" />
       <workItem from="1734886783110" duration="2172000" />
-      <workItem from="1734974850779" duration="266000" />
     </task>
     <servers />
   </component>
@@ -133,8 +122,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
