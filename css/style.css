@@ -110,3 +110,55 @@ body {
     box-sizing: border-box;
     font-size: 16px !important;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+header {
+    background: linear-gradient(to bottom, var(--gradient-cta-start), var(--gradient-cta-end));
+    background-size: contain;
+    height: 100vh;
+    color: var(--white);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border-bottom-left-radius: 5.5em;
+}
+
+.header-pattern {
+    position: absolute;
+    top: -250px;
+    left: 130px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header h1,
+header p,
+header button,
+.nav {
+    position: relative; /* Ensures it appears above the SVG */
+    z-index: 1;
+}
+
+.nav__links {
+    display: none;
+}
