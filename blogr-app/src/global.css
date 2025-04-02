@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-display: swap;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/overpass-v16-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets//fonts/overpass-v16-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/ubuntu-v20-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/ubuntu-v20-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/ubuntu-v20-latin-700.woff2") format("woff2");
+}
+
+:root {
+  --light-red: hsl(356, 100%, 66%);
+  --very-light-red: hsl(355, 100%, 74%);
+  --very-dark-blue: hsl(208, 49%, 24%);
+  --white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(240, 2%, 79%);
+  --very-dark-grayish-blue: hsl(207, 13%, 34%);
+  --very-dark-black-blue: hsl(240, 10%, 16%);
+  --cta-start-gradient: hsl(13, 100%, 72%);
+  --cta-end-gradient: hsl(353, 100%, 62%);
+  --body-start-gradient: hsl(237, 17%, 21%);
+  --body-end-gradient: hsl(237, 23%, 32%);
+  --body-fs: 1rem; /* Changed to rem for better accessibility and scalability */
+  --ubuntu-f: "Ubuntu";
+  --ubuntu-400: 400;
+  --ubuntu-500: 500;
+  --ubuntu-700: 700;
+  --overpass-f: "Overpass";
+  --overpass-300: 300;
+  --overpass-600: 600;
+  --border-raduis: 6.5em;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--body-fs);
+  font-family: var(--overpass-f);
+  min-height: 100vh; /* Example default: Minimum height of viewport */
+}
+
+/* @media (min-width: 1440px) {
+  body {
+    height: 3394px;
+  }
+}
+
+@media (max-width: 786px) {
+  body {
+    height: 4689px;
+  }
+} */
+p {
+  font-weight: var(--overpass-300);
+  line-height: 1.875rem;
+  letter-spacing: 0.0625rem;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ubuntu-f);
+} */
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: var(--overpass-600);
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  width: 100%;
+  height: 1px;
+  margin-block: 1.5em;
+  background-color: var(--grayish-blue);
+}
+
+.hidden {
+  display: none !important;
+}

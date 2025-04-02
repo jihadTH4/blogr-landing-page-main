@@ -1,0 +1,54 @@
+.section {
+  composes: section from "./FutureDesignSection.module.css";
+  max-width: 100%;
+  padding-inline: 0;
+  padding-top: 14em;
+  padding-right: 2em;
+}
+
+.FeaturesContainer {
+  composes: designContainer from "./FutureDesignSection.module.css";
+  margin: 0;
+}
+
+.FeaturesTextContent {
+  composes: designDesc from "./FutureDesignSection.module.css";
+}
+
+.laptopIllWrapper {
+  max-width: 100%;
+  transform: translateX(-40%) scale(1.75) !important;
+}
+
+.LaptopIllDesktop {
+  max-width: 100%;
+}
+
+.title {
+  composes: title from "./FutureDesignSection.module.css";
+}
+
+.description {
+  composes: description from "./FutureDesignSection.module.css";
+}
+
+@media (max-width: 768px) {
+  .section {
+    composes: section from "./FutureDesignSection.module.css";
+    padding: 4em 1em !important;
+  }
+
+  .FeaturesContainer {
+    composes: designContainer from "./FutureDesignSection.module.css";
+  }
+
+  .FeaturesTextContent {
+    composes: designDesc from "./FutureDesignSection.module.css";
+    padding: 50px 1.5em;
+  }
+
+  .laptopIllWrapper {
+    composes: laptopIllWrapper from "./FutureDesignSection.module.css";
+    transform: translateX(0) scale(1.5) !important;
+  }
+}
