@@ -21,7 +21,12 @@
 
 .sectionTitle {
   margin: 2em auto;
-  font-size: 2.5rem;
+  /* font-size: 1.75rem !important; */
+  font-size: clamp(
+    .75rem,
+    1.5357142857142856rem + 1.0714285714285714vw,
+    2.5rem
+  ) !important;
   color: var(--very-dark-blue);
 }
 
@@ -48,7 +53,7 @@
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .designContainer {
     flex-direction: column;
     align-items: center;
@@ -74,7 +79,7 @@
   .sectionTitle {
     text-align: center;
   }
-  
+
   .section {
     padding: 1em;
   }

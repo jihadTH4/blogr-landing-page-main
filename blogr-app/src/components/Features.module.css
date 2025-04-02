@@ -33,7 +33,7 @@
   composes: description from "./FutureDesignSection.module.css";
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section {
     composes: section from "./FutureDesignSection.module.css";
     padding: 4em 1em !important;

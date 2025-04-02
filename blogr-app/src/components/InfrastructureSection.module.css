@@ -39,15 +39,15 @@
 
 .textWrapper h1 {
   font-size: 2.5em;
-  font-weight: var(--ubuntu-700);
-  margin-bottom: 0.5em;
+  font-weight: var(--overpass-300);
+  margin-bottom: 0.75em !important;
 }
 
 .textWrapper p {
   margin-bottom: 1em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .phonesContainer {
     height: auto;
     padding-block: 8em 6em;
@@ -65,7 +65,8 @@
     position: relative;
   }
   .imgWrapper {
-    width: 400px;
+    width: clamp(150px, 100%, 400px);
+    height: auto;
     top: 0;
     transform: translate(0, -100px);
     margin-top: 0;
@@ -83,7 +84,7 @@
     align-items: center;
     transform: translate(0, 0%);
     padding-right: 0;
-    padding-inline: 2em;
+    padding-inline: 1.25em;
   }
   .textWrapper h1 {
     text-align: center;
@@ -97,6 +98,6 @@
 
 @media (max-width: 380px) {
   .phonesContainer {
-    background-position: 50% -1800%;
+    background-position: 50% -725%;
   }
 }
