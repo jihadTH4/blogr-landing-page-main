@@ -15,4 +15,4 @@
 .DS_Store
 .prettierignoren
 
-.nodeode_modules
+.node_modules

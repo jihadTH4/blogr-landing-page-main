@@ -16,7 +16,7 @@ export default function FutureDesignSection() {
         </div>
         <div className={styles.designDesc}>
           <div>
-            <h3 className={styles.title}>Introducing an extensible editor</h3>
+            <h6 className={styles.title}>Introducing an extensible editor</h6>
             <p className={styles.description}>
               Blogr features an exceedingly intuitive interface which lets you
               focus on one thing: creating content. The editor supports
@@ -27,7 +27,7 @@ export default function FutureDesignSection() {
             </p>
           </div>
           <div>
-            <h3 className={styles.title}>Robust content management</h3>
+            <h6 className={styles.title}>Robust content management</h6>
             <p className={styles.description}>
               Flexible content management enables users to easily move through
               posts. Increase the usability of your blog by adding customized

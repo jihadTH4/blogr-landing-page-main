@@ -15,7 +15,7 @@ export default function Features() {
         </div>
         <div className={styles.FeaturesTextContent}>
           <div>
-            <h3 className={styles.title}>Free, open, simple</h3>
+            <h6 className={styles.title}>Free, open, simple</h6>
             <p className={styles.description}>
               Blogr is a free and open source application backed by a large
               community of helpful developers. It supports features such as code
@@ -26,7 +26,7 @@ export default function Features() {
             </p>
           </div>
           <div>
-            <h3 className={styles.title}>Powerful tooling</h3>
+            <h6 className={styles.title}>Powerful tooling</h6>
             <p className={styles.description}>
               Batteries included. We built a simple and straightforward CLI tool
               that makes customization and deployment a breeze, but capable of
