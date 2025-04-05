@@ -16,3 +16,4 @@
 .prettierignoren
 
 .node_modules
+.blogr-app/node_modules
