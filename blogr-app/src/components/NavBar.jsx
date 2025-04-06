@@ -154,7 +154,7 @@ export default function NavBar() {
       >
         <img
           src={isMobileMenuOpen ? CloseIcon : HamburgerIcon}
-          alt="" // Decorative image, alt is empty
+          alt={isMobileMenuOpen ? "Close Icon" : "Hamburger Icon"} // Decorative image, alt is empty
           aria-hidden="true" // Hide decorative image from screen readers
         />
       </button>
