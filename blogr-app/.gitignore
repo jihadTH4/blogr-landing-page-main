@@ -15,5 +15,5 @@
 .DS_Store
 .prettierignoren
 
-.node_modules
+node_modules
 .blogr-app/node_modules
