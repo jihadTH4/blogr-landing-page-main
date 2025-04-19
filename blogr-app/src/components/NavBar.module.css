@@ -19,7 +19,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* Base styles for desktop */
 }
 
 .navLinks {
@@ -30,14 +29,13 @@
 }
 
 .navItem {
-  /* width: 100%; Removed, let it size naturally */
   position: relative;
 }
 
 .dropdownMenu {
-  display: none; /* Hidden by default */
+  display: none;
   position: absolute;
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Added transition */
+  transition: opacity 0.3s ease, transform 0.3s ease;
   width: 150px;
   padding: 1.5em;
   margin-top: 1em;
@@ -45,17 +43,17 @@
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0.5em;
   gap: 0.5em;
-  z-index: 10; /* Ensure dropdown is above other items */
-  opacity: 0; /* Start transparent for transition */
-  visibility: hidden; /* Start hidden for transition */
-  transform: translateY(-10px); /* Start slightly up */
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
 }
 
 .dropdownMenuActive {
-  display: grid; /* Or block, depending on content */
-  opacity: 1; /* Fade in */
-  visibility: visible; /* Make visible */
-  transform: translateY(0); /* Move to final position */
+  display: grid;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .dropdownMenu a {
@@ -74,13 +72,13 @@
   position: relative;
   background-color: transparent;
   font-weight: var(--overpass-600);
-  cursor: pointer; /* Add cursor */
+  cursor: pointer;
 }
 
 .dropdownToggle::after {
   position: absolute;
   margin-left: 0.5em;
-  transition: transform 0.2s ease; /* Changed target property */
+  transition: transform 0.2s ease;
   content: url(../assets/images/icon-arrow-light.svg);
 }
 
@@ -106,7 +104,7 @@
   border: none;
   padding: 0.75em 2.25em;
   transition: all 0.1s ease;
-  cursor: pointer; /* Add cursor */
+  cursor: pointer;
 }
 
 .login {
@@ -118,7 +116,7 @@
   color: var(--light-red);
   background-color: white;
   border-radius: 2em;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1); /* Fixed syntax */
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btnPrimary:active {
@@ -126,31 +124,25 @@
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-/* --- Mobile Toggle Button --- */
 .mobileToggle {
-  display: none; /* Hidden by default, shown in media query */
+  display: none;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  z-index: 1000; /* Ensure it's above mobile menu */
+  z-index: 1000;
 }
 
 .mobileToggle img {
-  display: block; /* Prevent extra space below image */
+  display: block;
 }
 
 hr {
   display: none;
 }
 
-/* ================== */
-/*    Media Queries   */
-/* ================== */
-
 @media (max-width: 1024px) {
   .navbar {
     padding: 2em;
-    /* padding-bottom: 4em; Removed potentially conflicting padding */
   }
 
   .logo img {
@@ -160,31 +152,29 @@ hr {
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 1.5em; /* Adjusted mobile padding */
+    padding: 1.5em;
   }
 
   .navContainer {
-    width: calc(100% - 3em); /* Adjusted width relative to padding */
-    max-height: calc(100vh - 100px); /* Limit height */
-    overflow-y: auto; /* Allow scrolling if content overflows */
-    top: 80px; /* Adjusted top position */
-    left: 1.5em; /* Match navbar padding */
-    padding: 2em 1.5em; /* Adjusted padding */
+    width: calc(100% - 3em);
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    top: 80px;
+    left: 1.5em;
+    padding: 2em 1.5em;
     position: absolute;
     flex-direction: column;
-    justify-content: flex-start; /* Changed justification */
+    justify-content: flex-start;
     align-items: center;
     border-radius: 0.25em;
-    gap: 1.5em; /* Adjusted gap */
+    gap: 1.5em;
     z-index: 999;
     text-align: center;
     background-color: var(--white);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-
-    /* --- Mobile Visibility Control --- */
     visibility: hidden;
     opacity: 0;
-    transform: translateY(-10px); /* Start slightly up */
+    transform: translateY(-10px);
     transition: visibility 0s linear 0.3s, opacity 0.3s ease,
       transform 0.3s ease;
   }
@@ -197,13 +187,12 @@ hr {
   }
 
   .dropdownMenu {
-    /* --- Reset absolute positioning for mobile --- */
     position: static;
-    display: none; /* Still controlled by Active class */
-    width: 100%; /* Take full width of parent */
-    padding: 1.5em 0; /* Adjusted padding */
+    display: none;
+    width: 100%;
+    padding: 1.5em 0;
     margin-top: 1em;
-    margin-bottom: 0.5em; /* Add some space below */
+    margin-bottom: 0.5em;
     color: var(--very-dark-blue);
     font-weight: var(--overpass-600);
     opacity: 0.75;
@@ -211,10 +200,10 @@ hr {
     box-shadow: none;
     border-radius: 0.25em;
     gap: 2em;
-    text-align: center; /* Center links */
-    opacity: 1; /* Reset opacity for static */
-    visibility: visible; /* Reset visibility for static */
-    transform: none; /* Reset transform for static */
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
   }
 
   .dropdownMenu li {
@@ -222,7 +211,6 @@ hr {
     opacity: 0.95;
   }
 
-  /* No transition needed when position is static */
   .dropdownMenu.dropdownMenuActive {
     display: block;
     opacity: 1;
@@ -234,14 +222,14 @@ hr {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items */
-    gap: 1.5em; /* Adjust gap */
-    border-bottom: 1px solid hsl(0, 0%, 87%); /* Use separator */
-    padding-bottom: 1.5em; /* Space before separator */
+    align-items: center;
+    gap: 1.5em;
+    border-bottom: 1px solid hsl(0, 0%, 87%);
+    padding-bottom: 1.5em;
   }
 
   .navItem {
-    width: 100%; /* Ensure list items take full width */
+    width: 100%;
   }
 
   .dropdownToggle,
@@ -264,9 +252,9 @@ hr {
   .authButtons {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center auth buttons */
-    width: 100%; /* Take full width */
-    gap: 1em; /* Add gap */
+    align-items: center;
+    width: 100%;
+    gap: 1em;
   }
 
   .btnPrimary {
@@ -283,28 +271,14 @@ hr {
   }
 
   .mobileToggle {
-    display: block; /* Show the toggle button */
+    display: block;
   }
 
   .logo img {
     width: 85px;
   }
 
-  /* Hide hr as navLinks now has a border-bottom */
   .hr {
     display: none;
   }
 }
-
-/* Remove specific overrides for smaller screens unless needed */
-/* @media (max-width: 425px) { */
-/*   .navContainer { */
-/*     left: 26.5px; */
-/*   } */
-/* } */
-
-/* @media (max-width: 375px) { */
-/*   .navContainer { */
-/*     left: 28.5px; */
-/*   } */
-/* } */
