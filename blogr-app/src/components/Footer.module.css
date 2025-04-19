@@ -41,7 +41,7 @@ footer {
 .navList {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr ));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 
   grid-auto-flow: column;
   place-content: start;
@@ -67,9 +67,9 @@ footer {
 }
 
 .links a {
-  color: var(--grayish-blue);
+  /* color: var(--grayish-blue); */
   cursor: pointer;
-  /* transition: all .2s ease; */
+  transition: all 0.2s ease;
   border: 1px solid transparent;
 }
 
